@@ -1,0 +1,786 @@
+<!-- Δηλώνει ότι το έγγραφο ακολουθεί HTML5. -->
+<!DOCTYPE html>
+<html>
+
+<!-- Ρυθμίσεις σελίδας: τίτλος, γραμματοσειρές, CSS και εξωτερικές βιβλιοθήκες. -->
+<head>
+    <!-- Τίτλος που εμφανίζεται στην καρτέλα του browser. -->
+    <title>Aqua Pro</title>
+	<link rel="icon" type="image/x-icon" href="img/aquapro/favicon.png">
+	<meta charset="UTF-8">
+    <link href="https://fonts.googleapis.com/css2?family=Calistoga&display=swap" rel="stylesheet">
+    <!-- Απαραίτητη ρύθμιση ώστε η προβολή σε κινητά να ακολουθεί το πλάτος της συσκευής. -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" type="text/css" href="css/superslides.css">
+    <link rel="stylesheet" type="text/css" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/all.css"
+        integrity="sha384-3AB7yXWz4OeoZcPbieVW64vVXEwADiYyAEhwilzWsLw+9FgqpyjjStpPnpBO8o8S" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.2.5/jquery.fancybox.min.css" />
+
+
+
+    <!-- Το προσωπικό σου CSS φορτώνεται μετά τις βιβλιοθήκες, για να μπορεί να υπερισχύει. -->
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</head>
+
+
+
+
+
+
+
+<!-- Έναρξη του ορατού περιεχομένου της ιστοσελίδας. -->
+<body>
+
+    <!-- Κύριο μενού: Bootstrap navbar με συνδέσμους σε ενότητες της ίδιας σελίδας. -->
+    <nav id="navigation" class="navbar navbar-expand-lg">
+        <a class="navbar-brand" href="#"><img src="img/home.png" alt=""> Home</a>
+
+        <!-- Κουμπί που ανοίγει/κλείνει το μενού στις μικρές οθόνες. -->
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#about">Εργασίες <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#stats">Υπηρεσίες</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#contact">Επικοινωνία</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#Portfolio">Έργα</a>
+                </li>
+            </ul>
+        </div>
+
+        <!-- Λεκτικό σήμα Aqua Pro στο μενού. -->
+        <div class="logo">
+            <h1><strong>Aqua Pro</strong></h1>
+        </div>
+
+    </nav>
+
+
+
+
+    <!-- Οθόνη φόρτωσης· εξαφανίζεται από το script.js όταν ολοκληρωθεί η φόρτωση. -->
+    <div class="loader">
+        <div class="inner"></div>
+
+    </div>
+
+    <!-- Κεντρικό slideshow της αρχικής σελίδας (Superslides). -->
+    <div id="slides">
+
+
+        <!-- Σκούρο ημιδιαφανές στρώμα για καλύτερη αντίθεση λευκών κειμένων. -->
+        <div class="overlay"></div>
+
+        <!-- Οι φωτογραφίες που εναλλάσσονται στο slideshow. -->
+        <div class="slides-container">
+            <img src="img/slide1.jpg" alt="Σύγχρονο μπάνιο με υδραυλικό εξοπλισμό">
+            <img src="img/slide2.jpg" alt="Σύγχρονο μπάνιο με υδραυλικό εξοπλισμό">
+            <img src="img/slide3.jpg" alt="Σύγχρονο μπάνιο με υδραυλικό εξοπλισμό">
+        </div>
+
+        <!-- Κεντρικός τίτλος και δυναμικό κείμενο υπηρεσιών. -->
+        <div class="titleMessage">
+            <div class="heading">
+
+                <div class="aquapro">
+                    <p class="main"><b>AQUA PRO</b></p>
+                </div>
+                <!-- Το Typed.js εισάγει εδώ εναλλάξ τις υπηρεσίες που ορίζεις στο script.js. -->
+                <p class="sub typed"></p>
+
+            </div>
+        </div>
+
+
+
+        <!-- Βέλη προηγούμενης/επόμενης φωτογραφίας. -->
+        <nav class="slides-navigation">
+            <a href="#" class="next"></a>
+            <a href="#" class="prev"></a>
+        </nav>
+
+    </div>
+
+
+    <!-- Ενότητα «Εργασίες»: βίντεο και αναλυτική παρουσίαση των υπηρεσιών. -->
+    <div id="about" class="section">
+        <div class="container">
+            <div class="row">
+
+                <div class="col-md-7">
+                    <!-- Το βίντεο παίζει/σταματά όταν μπαίνει/βγαίνει από την ορατή περιοχή. -->
+                    <video class="scroll-video" width="99%" height="97%" controls loop muted>
+   	 	<source src="video/video1.mp4" type="video/mp4">
+   	 	Your browser does not support the video tag.
+		</video>
+                </div>
+
+                <div class="col-md-5">
+
+
+                    <div class="aquapro">
+                        <h2><strong>Εργασία & Υπευθυνότητα</strong></h2>
+                    </div>
+
+                    <p>
+                        Οι υπηρεσίες που μπορούμε με υπευθυνότητα και με εγγύηση αλλά και οικονομικά να σας προσφέρουμε είναι :
+							
+                    </p>
+                    <p>
+                       Όλων των ειδών τις υδραυλικές εγκαταστάσεις - εργασίες.
+						Συντήρηση και επισκευή υδραυλικών μηχανισμών.<br>
+						Έλεγχο, συντήρηση, Θέρμανση, καλοριφέρ.<br>
+						Εγκατάσταση λέβητα, Επισκευή λέβητα και αλλαγή λέβητα.
+                        <br>
+                        Ηλιακοί θερμοσίφωνες και ηλεκτρικοί θερμοσίφωνες  πολύ μεγάλη εμπειρία στην τοποθέτηση, επισκευή, συντήρηση και αντικατάσταση.<br>
+						Αλλαγή επισκευή αποχετεύσεων, και καμινάδων παλαιών κτηρίων.
+						Παντός τύπου υδραυλικών εργασιών. <br>
+                        Άμεση εξυπηρέτηση σε όλο τον νομό Αττικής, καθώς και τις γύρω περιοχές - οικονομικά - γρήγορα και με εγγύηση καλής και μακροχρόνιας λειτουργίας.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <!-- Ενότητα υπηρεσιών: κάρτες μέσα σε responsive carousel. -->
+    <div id="stats" class="skillsSection section">
+
+        <div class="container">
+
+            <div class="row">
+
+                <div class="col-md-12 text-center">
+                    <div class="world">
+                        <h2><strong>ΥΠΗΡΕΣΙΕΣ ΜΕ ΕΓΓΥΗΣΗ</strong></h2>
+                    </div>
+                    <p>Οικονομικά και ποιοτικά.</p>
+                </div>
+
+
+                <!-- Το Owl Carousel καθορίζει πόσες κάρτες φαίνονται ανά πλάτος οθόνης. -->
+                <div class="owl-carousel owl-theme">
+
+                    <div class="skill">
+                        <!-- Κυκλικό διάγραμμα: το data-percent είναι ο στόχος που ζωγραφίζει η βιβλιοθήκη. -->
+                        <span class="chart" data-percent="100"><span class="percent">100</span>
+                            <canvas height="152" width="152"></canvas>
+                        </span>
+                        <h4 style="color: #001a33;">ΥΔΡΑΥΛΙΚΕΣ ΕΡΓΑΣΙΕΣ</h4>
+                        <p>Υδραυλικές εγκαταστάσεις. Ανακαινίσεις υδραυλικών εγκαταστάσεων. Βλάβες υδραυλικών. Καλοριφέρ.</p>
+                    </div>
+
+                    <div class="skill">
+                        <!-- Κυκλικό διάγραμμα: το data-percent είναι ο στόχος που ζωγραφίζει η βιβλιοθήκη. -->
+                        <span class="chart" data-percent="100"><span class="percent">100</span>
+                            <canvas height="152" width="152"></canvas>
+                        </span>
+                        <h4 style="color: #001a33;">ΘΕΡΜΟΣΙΦΩΝΕΣ </h4>
+                        <p>Ηλιακοί Θερμοσίφωνες – ηλεκτρικοί θερμοσίφωνες</p>
+                    </div>
+                    <div class="skill">
+                        <!-- Κυκλικό διάγραμμα: το data-percent είναι ο στόχος που ζωγραφίζει η βιβλιοθήκη. -->
+                        <span class="chart" data-percent="100"><span class="percent">100</span>
+                            <canvas height="152" width="152"></canvas>
+                        </span>
+                        <h4 style="color: #001a33;">ΕΝΤΕΙΧΙΖΟΜΕΝΑ</h4>
+                        <p>Το ειδικευμένο προσωπικό μας έχει μεγάλη εμπειρία και τεχνική κατάρτιση στην εγκατάσταση αλλά και επισκευή εντειχιζόμενων καζανακίων, όλων των τύπων.</p>
+                    </div>
+                    <div class="skill">
+                        <!-- Κυκλικό διάγραμμα: το data-percent είναι ο στόχος που ζωγραφίζει η βιβλιοθήκη. -->
+                        <span class="chart" data-percent="100"><span class="percent">100</span>
+                            <canvas height="152" width="152"></canvas>
+                        </span>
+                        <h4 style="color: #001a33;">ΑΠΟΦΡΑΞΕΙΣ</h4>
+                        <p>Απόφραξη νιπτήρα.
+							Απόφραξη λεκάνης.
+							Απόφραξη νεροχύτη.
+						</p>
+                    </div>
+
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- Ενότητα τεσσάρων στατιστικών πλαισίων με animated counters. -->
+    <div id="skills" class="statsSection section">
+
+        <div class="container">
+
+            <div class="row">
+
+                <!-- Bootstrap στήλες: τέσσερα πλαίσια σε desktop, δύο ανά σειρά σε tablet. -->
+                <div class="col-md-3 col-sm-6">
+
+                    <div class="squareItem">
+
+
+                        <div class="squareInnerContainer">
+
+                            <!-- Εικονίδιο στην κορυφή του πλαισίου, με απόλυτη τοποθέτηση από CSS. -->
+                            <div class="squareIcon">
+                                <i class="fa fa-clock"></i>
+                            </div>
+
+                            <!-- Αριθμός counter και περιγραφή της κάθε κάρτας. -->
+                            <div class="squareContent">
+                                <h2 class="counter">24</h2>
+                                <h3>Ώρες εξυπηρέτησης. Άμεση ανταπόκριση σε επείγουσες υδραυλικές ανάγκες, όποτε μας χρειαστείτε.</h3>
+                            </div>
+
+                        </div>
+
+
+                    </div>
+
+                </div>
+
+
+                <!-- Bootstrap στήλες: τέσσερα πλαίσια σε desktop, δύο ανά σειρά σε tablet. -->
+                <div class="col-md-3 col-sm-6">
+
+                    <div class="squareItem">
+
+
+                        <div class="squareInnerContainer">
+
+                            <!-- Εικονίδιο στην κορυφή του πλαισίου, με απόλυτη τοποθέτηση από CSS. -->
+                            <div class="squareIcon">
+                                <i class="fas fa-calendar-alt"></i>
+                            </div>
+
+                            <!-- Αριθμός counter και περιγραφή της κάθε κάρτας. -->
+                            <div class="squareContent">
+                                <h2 class="counter">365</h2>
+                                <h3> Ημέρες τον χρόνο. Είμαστε δίπλα σας κάθε ημέρα, προσφέροντας αξιόπιστες υδραυλικές λύσεις.
+                                </h3>
+                            </div>
+
+                        </div>
+
+
+                    </div>
+
+                </div>
+
+
+                <!-- Bootstrap στήλες: τέσσερα πλαίσια σε desktop, δύο ανά σειρά σε tablet. -->
+                <div class="col-md-3 col-sm-6">
+
+                    <div class="squareItem">
+
+                        <div class="squareInnerContainer">
+
+                            <!-- Εικονίδιο στην κορυφή του πλαισίου, με απόλυτη τοποθέτηση από CSS. -->
+                            <div class="squareIcon">
+                                <i class="fas fa-handshake"></i>
+                            </div> 
+					
+						<div class="squareContent">
+						<!-- Ομαδοποιεί τον animated αριθμό με το σύμβολο + ή % στην ίδια γραμμή. -->
+						<div class="counterNumber">
+							<h2 class="counter">25</h2><span class="counterPlus">+</span>
+						</div>
+
+						<h3>
+							Χρόνια εμπειρίας. Πολυετής τεχνογνωσία,
+							ποιοτική εργασία και επαγγελματισμός
+							σε κάθε έργο.
+						</h3>
+					</div>
+
+
+
+                        </div>
+
+
+                    </div>
+
+                </div>
+
+
+
+                <!-- Bootstrap στήλες: τέσσερα πλαίσια σε desktop, δύο ανά σειρά σε tablet. -->
+                <div class="col-md-3 col-sm-6">
+
+                    <div class="squareItem">
+
+                        <div class="squareInnerContainer">
+
+                            <!-- Εικονίδιο στην κορυφή του πλαισίου, με απόλυτη τοποθέτηση από CSS. -->
+                            <div class="squareIcon">
+                                <i class="fas fa-home"></i>
+                            </div>
+
+                            <!-- Αριθμός counter και περιγραφή της κάθε κάρτας. -->
+                            <div class="squareContent">
+						<!-- Ομαδοποιεί τον animated αριθμό με το σύμβολο + ή % στην ίδια γραμμή. -->
+						<div class="counterNumber">
+							<h2 class="counter">100</h2><span class="counterPlus">%</span>
+						</div>
+                                <h3>Δέσμευση στην ποιότητα. Προσεγμένες εργασίες με συνέπεια, υπευθυνότητα και σεβασμό στον χώρο σας.</h3>
+                            </div>
+
+                        </div>
+
+
+                    </div>
+
+                </div>
+
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- Ενότητα επικοινωνίας με στοιχεία επιχείρησης και σύνδεσμο email. -->
+    <div id="contact" class="contactSection section">
+        <div class="col-md-12 text text-center">
+            <p class="subHeading">Σας αρέσει αυτό που βλέπετε; </p>
+            <div class="mail">
+                <h2>Επικοινωνήστε μαζί μας!</h2>
+				<h4>Κασσιώτης Κωνσταντίνος<br> Αγ.Βαρβάρας 1 Κορυδαλλός</h4> 
+				<i class="fa fa-phone" style="font-size:26px;color:white"> 6931151857</i>
+			
+            </div>
+            <a href="mailTo:aquapro.kk@gmail.com" class="contactButton">Αποστολή E-mail</a>
+
+        </div>
+
+    </div>
+
+
+    <!-- Portfolio: συλλογή φωτογραφιών με φίλτρα κατηγοριών. -->
+    <div id="Portfolio" class="section">
+        <div class="container">
+
+
+            <div class="row">
+                <div class="heading">
+                    <h2><strong>ΣΥΝΟΨΗ</strong></h2>
+
+                </div>
+
+                <!-- Τα data-filter συνδέονται με τα CSS class των έργων μέσω του Isotope. -->
+                <div class="filter">
+                    <ul id="filters">
+
+                        <li><a href="#" data-filter="*" class="current">ΟΛΕΣ</a></li>
+
+                        <li><a href="#" data-filter=".apps">Μπάνια</a></li>
+
+                        <li><a href="#" data-filter=".me">Εγκατάσταση</a></li>
+
+                        <li><a href="#" data-filter=".websites">Εργασίες</a></li>
+
+                    </ul>
+
+                </div>
+
+
+                <!-- Πλέγμα έργων· κάθε li αντιπροσωπεύει μία φωτογραφία. -->
+                <div class="itemsContainer">
+
+                    <ul class="items">
+
+
+
+
+                        <!-- Κατηγορία apps = μπάνια. Το κενό onclick δεν προσθέτει συμπεριφορά. -->
+                        <li onclick="" class="apps col-xs-6 col-sm-4 col-md-3 col-lg-3">
+
+
+                            <div class="item">
+
+                                <img src="img/aquapro/thumbnails/grower_1.jpg">
+
+
+                                <div class="icons">
+                                    <a href="img/aquapro/grower_f_1.jpg" title="View image" class="openButton"
+                                        data-fancybox data-caption="This is your Option">
+                                        <i class="fa fa-search"></i>
+                                    </a>
+
+                         
+                                </div>
+
+                                <div class="imageOverlay"></div>
+
+                            </div>
+
+
+                        </li>
+
+                        <!-- Κατηγορία apps = μπάνια. Το κενό onclick δεν προσθέτει συμπεριφορά. -->
+                        <li onclick="" class="apps col-xs-6 col-sm-4 col-md-3 col-lg-3">
+
+
+                            <div class="item">
+
+                                <img src="img/aquapro/thumbnails/grower_2.jpg">
+
+
+                                <div class="icons">
+                                    <a href="img/aquapro/grower_f_2.jpg" title="View image" class="openButton"
+                                        data-fancybox data-caption="This is your Option">
+                                        <i class="fa fa-search"></i>
+                                    </a>
+
+                                    <a href="" target="_blank" class="projectLink">
+                                        <i class="fa fa-link"></i>
+                                    </a>
+                                </div>
+
+                                <div class="imageOverlay"></div>
+
+                            </div>
+
+
+                        </li>
+
+
+                        <!-- Κατηγορία apps = μπάνια. Το κενό onclick δεν προσθέτει συμπεριφορά. -->
+                        <li onclick="" class="apps col-xs-6 col-sm-4 col-md-3 col-lg-3">
+
+
+                            <div class="item">
+
+                                <img src="img/aquapro/thumbnails/grower_3.jpg">
+
+
+                                <div class="icons">
+                                    <a href="img/aquapro/grower_f_3.jpg" title="View image" class="openButton"
+                                        data-fancybox data-caption="This is your Option">
+                                        <i class="fa fa-search"></i>
+                                    </a>
+
+                                    <a href="" target="_blank" class="projectLink">
+                                        <i class="fa fa-link"></i>
+                                    </a>
+                                </div>
+
+                                <div class="imageOverlay"></div>
+
+                            </div>
+
+
+                        </li>
+						
+						<li onclick="" class="apps col-xs-6 col-sm-4 col-md-3 col-lg-3">
+
+
+                            <div class="item">
+
+                                <img src="img/aquapro/thumbnails/grower_4.jpg">
+
+
+                                <div class="icons">
+                                    <a href="img/aquapro/grower_f_4.jpg" title="View image" class="openButton"
+                                        data-fancybox data-caption="This is your Option">
+                                        <i class="fa fa-search"></i>
+                                    </a>
+
+                                    <a href="" target="_blank" class="projectLink">
+                                        <i class="fa fa-link"></i>
+                                    </a>
+                                </div>
+
+                                <div class="imageOverlay"></div>
+
+                            </div>
+
+
+                        </li>
+
+
+
+
+                        <!-- Κατηγορία me = εγκαταστάσεις. -->
+                        <li onclick="" class="me col-xs-6 col-sm-4 col-md-3 col-lg-3">
+
+
+                            <div class="item">
+
+                                <img src="img/aquapro/thumbnails/plant_1.jpg">
+
+
+                                <div class="icons">
+                                    <a href="img/aquapro/plant_f_1.jpg" title="View image" class="openButton"
+                                        data-fancybox data-caption="This is your Option">
+                                        <i class="fa fa-search"></i>
+                                    </a>
+
+                                    <a href="" target="_blank" class="projectLink">
+                                        <i class="fa fa-link"></i>
+                                    </a>
+                                </div>
+
+                                <div class="imageOverlay"></div>
+
+                            </div>
+
+
+                        </li>
+						
+                        <!-- Κατηγορία me = εγκαταστάσεις. -->
+                        <li onclick="" class="me col-xs-6 col-sm-4 col-md-3 col-lg-3">
+
+
+                            <div class="item">
+
+                                <img src="img/aquapro/thumbnails/plant_2.jpg">
+
+
+                                <div class="icons">
+                                    <a href="img/aquapro/plant_f_2.jpg" title="View image" class="openButton"
+                                        data-fancybox data-caption="This is your Option">
+                                        <i class="fa fa-search"></i>
+                                    </a>
+
+                                    <a href="" target="_blank" class="projectLink">
+                                        <i class="fa fa-link"></i>
+                                    </a>
+                                </div>
+
+                                <div class="imageOverlay"></div>
+
+                            </div>
+
+
+                        </li>
+                        <!-- Κατηγορία me = εγκαταστάσεις. -->
+                        <li onclick="" class="me col-xs-6 col-sm-4 col-md-3 col-lg-3">
+
+
+                            <div class="item">
+
+                                <img src="img/aquapro/thumbnails/plant_3.jpg">
+
+
+                                <div class="icons">
+                                    <a href="img/aquapro/plant_f_3.jpg" title="View image" class="openButton"
+                                        data-fancybox data-caption="This is your Option">
+                                        <i class="fa fa-search"></i>
+                                    </a>
+
+                                    <a href="" target="_blank" class="projectLink">
+                                        <i class="fa fa-link"></i>
+                                    </a>
+                                </div>
+
+                                <div class="imageOverlay"></div>
+
+                            </div>
+
+
+                        </li>
+						
+						<li onclick="" class="me col-xs-6 col-sm-4 col-md-3 col-lg-3">
+
+
+                            <div class="item">
+
+                                <img src="img/aquapro/thumbnails/plant_4.jpg">
+
+
+                                <div class="icons">
+                                    <a href="img/aquapro/plant_f_4.jpg" title="View image" class="openButton"
+                                        data-fancybox data-caption="This is your Option">
+                                        <i class="fa fa-search"></i>
+                                    </a>
+
+                                    <a href="" target="_blank" class="projectLink">
+                                        <i class="fa fa-link"></i>
+                                    </a>
+                                </div>
+
+                                <div class="imageOverlay"></div>
+
+                            </div>
+
+
+                        </li>
+						
+					
+
+                        <!-- Κατηγορία websites = εργασίες. -->
+                        <li onclick="" class="websites col-xs-6 col-sm-4 col-md-3 col-lg-3">
+
+
+                            <div class="item">
+
+                                <img src="img/aquapro/thumbnails/farm_1.jpg">
+
+
+                                <div class="icons">
+                                    <a href="img/aquapro/farm_f_1.jpg" title="View image" class="openButton"
+                                        data-fancybox data-caption="This is your Option">
+                                        <i class="fa fa-search"></i>
+                                    </a>
+
+                                    <a href="" target="_blank" class="projectLink">
+                                        <i class="fa fa-link"></i>
+                                    </a>
+                                </div>
+
+                                <div class="imageOverlay"></div>
+
+                            </div>
+
+
+                        </li>
+
+
+
+                        <!-- Κατηγορία websites = εργασίες. -->
+                        <li onclick="" class="websites col-xs-6 col-sm-4 col-md-3 col-lg-3">
+
+
+                            <div class="item">
+
+                                <img src="img/aquapro/thumbnails/farm_2.jpg">
+
+
+                                <div class="icons">
+                                    <a href="img/aquapro/farm_f_2.jpg" title="View image" class="openButton"
+                                        data-fancybox data-caption="This is your Option">
+                                        <i class="fa fa-search"></i>
+                                    </a>
+
+                                    <a href="" target="_blank" class="projectLink">
+                                        <i class="fa fa-link"></i>
+                                    </a>
+                                </div>
+
+                                <div class="imageOverlay"></div>
+
+                            </div>
+
+						</li>
+						
+						<li onclick="" class="websites col-xs-6 col-sm-4 col-md-3 col-lg-3">
+
+
+                            <div class="item">
+
+                                <img src="img/aquapro/thumbnails/farm_3.jpg">
+
+
+                                <div class="icons">
+                                    <a href="img/aquapro/farm_f_3.jpg" title="View image" class="openButton"
+                                        data-fancybox data-caption="This is your Option">
+                                        <i class="fa fa-search"></i>
+                                    </a>
+
+                                    <a href="" target="_blank" class="projectLink">
+                                        <i class="fa fa-link"></i>
+                                    </a>
+                                </div>
+
+                                <div class="imageOverlay"></div>
+
+                            </div>
+
+						</li>
+						<li onclick="" class="websites col-xs-6 col-sm-4 col-md-3 col-lg-3">
+
+
+                            <div class="item">
+
+                                <img src="img/aquapro/thumbnails/farm_4.jpg">
+
+
+                                <div class="icons">
+                                    <a href="img/aquapro/farm_f_4.jpg" title="View image" class="openButton"
+                                        data-fancybox data-caption="This is your Option">
+                                        <i class="fa fa-search"></i>
+                                    </a>
+
+                                    <a href="" target="_blank" class="projectLink">
+                                        <i class="fa fa-link"></i>
+                                    </a>
+                                </div>
+
+                                <div class="imageOverlay"></div>
+
+                            </div>
+
+						</li>
+
+
+                    </ul>
+
+                </div>
+
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <!-- Υποσέλιδο με πνευματικά δικαιώματα. -->
+    <div class="copyrightSection">
+
+        <div class="col-md-12 text-center">
+            <p>&copy; Copyright AquaPro Greece 2026</p>
+
+        </div>
+
+    </div>
+
+    <!-- Εξωτερικές βιβλιοθήκες JavaScript. Η σειρά φόρτωσης έχει σημασία. -->
+    <script src="js/countUp.js"></script>
+    <script src="js/countUp-jquery.js"></script>
+    <script src="js/jquery.superslides.min.js"></script>
+    <script src="js/jquery.easypiechart.min.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/typed.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+    <script type="text/javascript" src="https://unpkg.com/isotope-layout@3.0.5/dist/isotope.pkgd.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.2.5/jquery.fancybox.min.js"></script>
+
+    <!-- Το δικό σου script εκτελείται αφού έχουν φορτωθεί οι εξαρτήσεις του. -->
+    <script src="js/script.js"></script>
+
+
+
+
+
+
+</body>
+
+</html>

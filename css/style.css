@@ -1,0 +1,528 @@
+/* Βασική τυπογραφία, χρώμα και φόντο όλης της σελίδας. */
+body {
+	font-size: 14px;
+    color: #333;
+    background-color: #fff;
+    letter-spacing: 1px;
+}
+
+/* Σκούρο φίλτρο πάνω από τις φωτογραφίες του hero. */
+.overlay {
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	z-index: 3;
+	background-color: rgba(0, 0, 0, 0.4);
+}
+
+/* Βέλη πλοήγησης στο slideshow. */
+.slides-navigation {
+	z-index: 6;
+}
+
+.slides-navigation .prev,
+.slides-navigation .next {
+	width: 47px;
+	height: 47px;
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+.slides-navigation a.prev {
+	left: 20px;
+	background-image: url(../img/icons/prev.png);
+}
+
+.slides-navigation a.next {
+	right: 20px;
+	background-image: url(../img/icons/next.png);
+}
+
+/* Κεντράρισμα τίτλου πάνω από τα slides με absolute positioning. */
+.titleMessage {
+	position: absolute;
+    width: 100%;
+    height: 250px;
+    top: 50%;
+    z-index: 5;
+    text-align: center;
+    margin-top: -125px;
+}
+
+/* Λευκό κείμενο και σκιά για αναγνωσιμότητα πάνω στις εικόνες. */
+.titleMessage .heading p {
+	color: #fff;
+    text-shadow: 0px 2px 5px rgba(0, 0, 0, 0.4);
+    font-weight: 100;
+    letter-spacing: 7px;
+}
+
+.titleMessage .heading .main {
+	font-size: 50px;
+}
+
+.titleMessage .heading .sub {
+	font-size: 23px;
+}
+
+/* Κοινές κατακόρυφες αποστάσεις των βασικών ενοτήτων. */
+.section {
+	padding: 100px 0;
+}
+
+/* Αποτρέπει υπερχείλιση εικόνας από το γονικό στοιχείο. */
+.aboutImage {
+	max-width: 100%;
+}
+
+/* Κοινό μπλε φόντο των υπηρεσιών και της επικοινωνίας. */
+.skillsSection,
+.contactSection {
+	background-color: #113768;
+	color: #fff;
+}
+
+/* Διάταξη μίας κάρτας υπηρεσίας μέσα στο carousel. */
+.skill{
+	text-align: center;
+	margin-left: 10px; 
+}
+/* Κυκλικό διάγραμμα υπηρεσίας: σταθερή επιφάνεια για το canvas. */
+.chart {
+	position: relative;
+	width: 152px;
+	height: 152px;
+	display: inline-block;
+	text-align: center;
+	
+}
+/* Τίτλος στην ενότητα υπηρεσιών. */
+.world{
+	text-align: center;
+	color: #fff;
+	font-family: 'Calistoga', cursive;
+
+
+}
+
+/* Το canvas σχεδιάζεται επάνω στο περίβλημα του διαγράμματος. */
+.chart canvas {
+	position: absolute;
+    left: 0;
+	top: 0;
+	
+}
+/* Αριθμός που εμφανίζεται στο κέντρο του κύκλου. */
+.chart .percent {
+	color:white;
+	line-height: 152px;
+	display: inline-block;
+	font-size: 35px;
+
+} 
+
+/* Προσθέτει οπτικά το % δίπλα στον αριθμό χωρίς να το διαβάζει το animation. */
+.chart .percent:after{
+	content: '%';
+}
+
+/* Εξωτερικό περίβλημα στατιστικού πλαισίου. */
+.squareItem {
+  margin-top: 30px;
+  position: relative;
+}
+/* Πλαίσιο με ανοιχτή επάνω πλευρά, padding και ελάχιστο ύψος. */
+.squareInnerContainer {
+	position: relative;
+	padding: 50px 15px 35px;
+	text-align: center;
+	border: 2px solid #113768;
+	border-top: none;
+	
+	min-height: 260px;
+	box-sizing: border-box;
+}
+
+/* Δύο μικρές γραμμές σχηματίζουν το επάνω περίγραμμα εκατέρωθεν του εικονιδίου. */
+.squareInnerContainer:before, 
+.squareInnerContainer:after {
+	content: '';
+	position: absolute;
+	top: 0px;
+	width: 30%;
+	border-bottom: 2px solid #113768;
+}
+.squareInnerContainer:before {
+	right: 0px;
+
+}
+.squareInnerContainer:after {
+	left: 0px;
+
+}
+
+/* Μεγάλοι αριθμοί στατιστικών. */
+.squareContent h2 {
+	font-size: 56px;
+	margin-bottom: 10px;
+	font-weight: 400;
+	color: #113768;
+
+}
+/* Περιγραφές στατιστικών· εδώ ρυθμίζεται και η στοίχιση αριστερά. */
+.squareContent h3 {
+	font-size: 13px;
+	font-weight: 600;
+	margin: 0;
+	text-align: left;
+	
+}
+/* Τοποθέτηση εικονιδίου στο κέντρο, λίγο πάνω από το πλαίσιο. */
+.squareIcon {
+	position: absolute;
+    left: 50%;
+    top: -30px;
+    width: 40%;
+    height: 60px;
+    font-size: 45px;
+    margin-left: -20%;
+    color: #113768;
+}
+
+/* Εμφάνιση κουμπιού επικοινωνίας. */
+.contactButton {
+	color: #fff;
+    padding: 15px 20px;
+    display: inline-block;
+    margin-top: 20px;
+    border: 1px solid #fff;
+    border-radius: 2px;
+
+}
+/* Αλλαγές όταν ο δείκτης περνά πάνω από το κουμπί. */
+.contactButton:hover {
+	text-decoration: none;
+	color: #ab7aff;
+	background-color:white;
+}
+
+/* Εμφάνιση συνδέσμων φίλτρων έργων. */
+.filter a {
+	color: #113768;
+	border: 1px solid #bdc3c7;
+	padding: 10px 18px;
+	display: block;
+}
+
+.filter li {
+	display: inline-block;
+	padding: 5px
+}
+
+/* Ενεργό φίλτρο στο portfolio. */
+.filter .current {
+	background-color:#113768;
+	border-color:#001a33;
+	color: #fff;
+}
+
+.filter {
+	text-align: center;
+	width: 100%;
+}
+
+.section .heading {
+	text-align: center;
+	padding-bottom: 40px;
+	width: 100%;
+	font-family: 'Calistoga', cursive;
+	color:#113768;
+}
+
+/* Διάταξη στοιχείων λίστας έργων. */
+.items li {
+	display: inline-block;
+	padding: 5px;
+}
+
+.itemsContainer {
+	width: 100%;
+
+}
+
+/* Σταθερό ύψος συλλογής φωτογραφιών */
+
+@media (min-width: 992px) {
+    #Portfolio .itemsContainer {
+        min-height: 650px;
+    }
+}
+
+
+/* Κανόνες εικόνων και ομαλής μετάβασης κατά το hover. */
+.items li img {
+	width: 100%;
+
+	-webkit-transition: all 0.2s linear;
+    -moz-transition: all 0.2s linear;
+    -o-transition: all 0.2s linear;
+    -ms-transition: all 0.2s linear;
+    -transition: all 0.2s linear;
+}
+
+/* Περιορίζει την εικόνα και κρύβει ό,τι ξεπερνά τα όριά της. */
+.items .item {
+	position: relative;
+	display: block;
+	overflow: hidden;
+}
+
+/* Τοποθετεί τα κουμπιά του έργου στο κέντρο της εικόνας. */
+.items .icons {
+	position: absolute;
+    width: 90px;
+    height: 40px;
+    left: 50%;
+    top: 50%;
+    margin: -20px auto 0 -47px;
+    text-align: center;
+    z-index: 3;
+}
+
+.items .icons i {
+	color: #fff;
+    font-size: 20px;
+    margin-top: 9px;
+}
+
+/* Κοινό στυλ κουμπιών πάνω στις φωτογραφίες. */
+.items a {
+	width: 40px;
+    height: 40px;
+    background-color:#113768;
+    position: relative;
+    display: inline-block;
+
+     -webkit-transition: all 0.2s linear, 0.2s;
+    -moz-transition: all 0.2s linear, 0.2s;
+    -o-transition: all 0.2s linear, 0.2s;
+    -ms-transition: all 0.2s linear, 0.2s;
+    -transition: all 0.2s linear, 0.2s;
+}
+
+/* Ημιδιαφανές σκούρο κάλυμμα που εμφανίζεται στο hover. */
+.items .imageOverlay {
+	width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    opacity: 0;
+
+    -webkit-transition: all 0.2s linear;
+    -moz-transition: all 0.2s linear;
+    -o-transition: all 0.2s linear;
+    -ms-transition: all 0.2s linear;
+    -transition: all 0.2s linear;
+}
+
+/* Κάνει ορατό το κάλυμμα όταν περνά ο δείκτης. */
+.items .item:hover .imageOverlay {
+	opacity: 1;
+}
+
+/* Αρχική θέση του εικονιδίου μεγεθυντικού φακού. */
+.items .openButton {
+	float: left;
+	left: -200px;
+
+
+
+}
+
+/* Αρχική θέση προαιρετικού συνδέσμου προς έργο. */
+.items .projectLink {
+	float: right;
+	right: -200px;
+
+}
+
+.items .item:hover .openButton{
+	left: 0px;
+
+}
+
+.items .item:hover .projectLink{
+	right: 0px;                                                         
+	
+}
+
+/* Μικρή μεγέθυνση εικόνας κατά το hover. */
+.items .item:hover img {
+	 -webkit-transform: scale(1.05);
+    -moz-transform: scale(1.05);
+    -o-transform: scale(1.05);
+    -ms-transform: scale(1.05);
+    -transform: scale(1.05);
+}
+
+
+
+/* Αφαιρεί το default padding από τη λίστα έργων. */
+.items {
+	padding: 0;
+}
+/* Σκούρο υποσέλιδο της σελίδας. */
+.copyrightSection {
+	background-color:#001a33;
+	color: #fff;
+	padding: 30px 5px;
+	font-family: 'Calistoga', cursive;
+	
+}
+
+.copyrightSection p {
+	margin: 0;
+}
+
+/* Βασική εμφάνιση του κύριου μενού. */
+#navigation {
+	background-color:#001a33;
+	padding: 20px 10px;
+	z-index: 100;
+	width: 100%;
+   
+}
+
+#navigation li {
+	padding: 0 10px;
+}
+
+#navigation li a {
+	color: #fff;
+}
+
+
+.navbar-brand,
+.navbar-brand:hover {
+	color: #fff;
+}
+
+/* Εικονίδιο hamburger για mobile μενού. */
+.navbar-toggler-icon {
+	background: url(../img/icons/menu.png);
+	background-size: 100%;
+}
+
+/* Κρατά το μενού σταθερό στην κορυφή μετά το scroll. */
+.fixedNav #navigation {
+	position: fixed;
+	top:0;
+}
+
+/* Κάλυμμα φόρτωσης πάνω από όλη τη σελίδα. */
+.loader {
+	width: 100%;
+	height: 100%;
+	background-color: #fff;
+	position: fixed;
+	top: 0px;
+	left: 0px;
+	z-index: 1000;
+
+}
+/* Κεντραρισμένο animation εικόνας κατά τη φόρτωση. */
+.loader .inner {
+	width: 100%;
+	height: 100%;
+	background: url(../img/loader.gif) center center no-repeat;
+}
+/* Τυπογραφία του σήματος Aqua Pro. */
+.logo{
+	text-align: center;
+	color: #fff;
+	padding-right:100px ;
+	font-family: 'Calistoga', cursive;
+	
+
+}
+/* Τυπογραφία επαναχρησιμοποιούμενων τίτλων Aqua Pro. */
+.aquapro{
+
+	text-align: center;
+	font-family: 'Calistoga', cursive;
+	color: #113768;
+}
+/* Τυπογραφία της ενότητας επικοινωνίας. */
+.mail{
+	text-align: center;
+	font-family: 'Calistoga', cursive;
+	color: #fff;
+}
+
+
+/* Flexbox: κρατά αριθμό και σύμβολο στην ίδια οριζόντια γραμμή. */
+.squareContent .counterNumber {
+    display: flex !important;
+    flex-direction: row !important;
+    align-items: baseline !important;
+    justify-content: center !important;
+    flex-wrap: nowrap !important;
+    gap: 0 !important;
+    width: 100%;
+}
+
+/* Αποτρέπει τον τίτλο-counter να καταλαμβάνει όλο το πλάτος. */
+.squareContent .counterNumber h2.counter {
+    display: inline-block !important;
+    width: auto !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    float: none !important;
+    line-height: 1.2 !important;
+}
+
+/* Μορφοποίηση του + ή % δίπλα στον κινούμενο αριθμό. */
+.squareContent .counterNumber .counterPlus {
+    display: inline-block !important;
+    font-size: 48px;
+    font-weight: 400;
+    line-height: 1 !important;
+    color: #123D70;
+    margin-left: 2px;
+}
+
+
+/* Responsive πλαίσια AquaPro */
+
+/* Κανόνες responsive: ενεργοποιούνται μόνο σε οθόνες έως 767px. */
+@media (max-width: 767px) {
+
+    .squareItem {
+        margin-top: 45px;
+    }
+
+    .squareInnerContainer {
+        min-height: 260px;
+        padding: 45px 20px 30px;
+    }
+
+    .squareContent h2 {
+        font-size: 48px;
+    }
+
+    .squareContent h3 {
+        font-size: 14px;
+        line-height: 1.6;
+    }
+
+    .squareContent .counterNumber .counterPlus {
+        font-size: 40px;
+    }
+
+    .squareIcon {
+        font-size: 40px;
+    }
+}
+
