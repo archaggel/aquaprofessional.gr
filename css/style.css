@@ -562,8 +562,9 @@ body {
     }
 
     .logo-subtitle {
-        font-size: 11px;
-        letter-spacing: 2px;
+        font-size: 16px;
+        text-align: right;
+        margin-top: -2px;
     }
 
 }
