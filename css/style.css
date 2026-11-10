@@ -467,14 +467,14 @@ body {
 .logo-subtitle {
     display: block;
     font-family: 'Calistoga', cursive;
-    font-size: 18px;
+    font-size: 16px;
     font-weight: 700;
     color: #ffffff;
-    letter-spacing: 1.5px;
+    letter-spacing: 1px;
     line-height: 1.1;
-    margin-top: -2px;
+    margin-top: -4px;
     text-align: right;
-    text-shadow: 0 2px 4px rgba(0,0,0,0.45);
+    text-shadow: 0 1px 3px rgba(0,0,0,0.35);
 }
 
 /* Τυπογραφία επαναχρησιμοποιούμενων τίτλων Aqua Pro. */
