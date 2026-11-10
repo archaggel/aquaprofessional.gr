@@ -535,14 +535,14 @@ body {
         line-height: 1.6;
     }
 
-    .squareContent .counterNumber .counterPlus {
+    .squareContent .counterNumber .counterSuffix {
         font-size: 40px;
     }
 
     .squareIcon {
         font-size: 40px;
     }
-
+}
 	
 /* =====================================
    ΛΟΓΟΤΥΠΟ ΣΕ ΜΙΚΡΕΣ ΟΘΟΝΕΣ
