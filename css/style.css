@@ -550,5 +550,28 @@ body {
     .squareIcon {
         font-size: 40px;
     }
+
+	
+/* =====================================
+   ΛΟΓΟΤΥΠΟ ΣΕ ΜΙΚΡΕΣ ΟΘΟΝΕΣ
+   ===================================== */
+
+@media (max-width: 767px) {
+
+    .logo {
+        padding: 0 8px;
+    }
+
+    .logo h1 {
+        font-size: 24px;
+    }
+
+    .logo-subtitle {
+        font-size: 11px;
+        letter-spacing: 2px;
+    }
+
+}
+
 }
 
