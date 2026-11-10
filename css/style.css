@@ -446,34 +446,31 @@ body {
 .logo {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    text-align: center;
-    margin-left: auto;
-    padding: 0 20px;
-    color: #fff;
-    font-family: 'Calistoga', cursive;
+    align-items: flex-end;   /* δεξιά */
+    justify-content: center;
+    line-height: 1;
 }
 
 /* Κεντρικός τίτλος */
 .logo h1 {
-    font-size: 36px;
-    font-weight: bold;
-    line-height: 1.1;
     margin: 0;
-    white-space: nowrap;
+    font-family: 'Calistoga', cursive;
+    font-size: 34px;
+    color: #fff;
+    line-height: 1;
 }
 
 /* Επώνυμο κάτω από το λογότυπο */
 .logo-subtitle {
-     display: block;
+    display: block;
+    margin-top: 6px;          /* απόσταση από το Aqua Pro */
     font-family: 'Calistoga', cursive;
     font-size: 18px;
-    font-weight: bold;
+    font-weight: 600;
     color: #fff;
-    letter-spacing: 1.5px;
+    letter-spacing: 1px;
+    line-height: 1.2;
     text-align: right;
-    margin-top: -2px;
-    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
 }
 
 /* Τυπογραφία επαναχρησιμοποιούμενων τίτλων Aqua Pro. */
