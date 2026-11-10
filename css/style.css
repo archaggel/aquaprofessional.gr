@@ -489,35 +489,26 @@ body {
 }
 
 
-/* Flexbox: κρατά αριθμό και σύμβολο στην ίδια οριζόντια γραμμή. */
-.squareContent .counterNumber {
-    display: flex !important;
-    flex-direction: row !important;
-    align-items: baseline !important;
-    justify-content: center !important;
-    flex-wrap: nowrap !important;
-    gap: 0 !important;
+/* Σωστή ευθυγράμμιση αριθμού και συμβόλου */
+.squareContent .counterNumber h2 {
+    display: flex;
+    align-items: baseline;
+    justify-content: center;
+    flex-wrap: nowrap;
+    gap: 2px;
     width: 100%;
+    margin: 0 0 10px;
+    padding: 0;
+    line-height: 1.2;
 }
 
-/* Αποτρέπει τον τίτλο-counter να καταλαμβάνει όλο το πλάτος. */
-.squareContent .counterNumber h2.counter {
-    display: inline-block !important;
-    width: auto !important;
-    margin: 0 !important;
-    padding: 0 !important;
-    float: none !important;
-    line-height: 1.2 !important;
-}
-
-/* Μορφοποίηση του + ή % δίπλα στον κινούμενο αριθμό. */
-.squareContent .counterNumber .counterPlus {
-    display: inline-block !important;
+/* Σύμβολα + και % */
+.squareContent .counterNumber .counterSuffix {
+    display: inline-block;
     font-size: 48px;
     font-weight: 400;
-    line-height: 1 !important;
+    line-height: 1;
     color: #123D70;
-    margin-left: 2px;
 }
 
 
