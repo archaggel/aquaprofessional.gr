@@ -324,7 +324,7 @@ body {
     -moz-transition: all 0.2s linear;
     -o-transition: all 0.2s linear;
     -ms-transition: all 0.2s linear;
-    -transition: all 0.2s linear;
+    transition: all 0.2s linear;
 }
 
 /* Κάνει ορατό το κάλυμμα όταν περνά ο δείκτης. */
@@ -364,7 +364,7 @@ body {
     -moz-transform: scale(1.05);
     -o-transform: scale(1.05);
     -ms-transform: scale(1.05);
-    -transform: scale(1.05);
+    transform: scale(1.05);
 }
 
 
@@ -553,7 +553,7 @@ body {
     .logo {
         padding: 0 8px;
     }
-}
+
     .logo h1 {
         font-size: 24px;
     }
@@ -562,8 +562,6 @@ body {
         font-size: 11px;
         letter-spacing: 2px;
     }
-
-}
 
 }
 
