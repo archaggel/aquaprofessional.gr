@@ -448,10 +448,8 @@ body {
     flex-direction: column;
     align-items: center;
     text-align: center;
-
     margin-left: auto;
     padding: 0 20px;
-
     color: #fff;
     font-family: 'Calistoga', cursive;
 }
@@ -467,7 +465,7 @@ body {
 
 /* Επώνυμο κάτω από το λογότυπο */
 .logo-subtitle {
-    font-family: 'Inter', sans-serif;
+    font-family: 'Calistoga', cursive;
     font-size: 14px;
     font-weight: 500;
     letter-spacing: 3px;
