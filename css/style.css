@@ -100,7 +100,7 @@ body {
 .world{
 	text-align: center;
 	color: #fff;
-	font-family: 'Inter', sans-serif;
+	 font-family: 'Manrope', sans-serif;
 
 
 }
@@ -485,13 +485,13 @@ body {
 .aquapro{
 
 	text-align: center;
-	font-family: 'Calistoga', cursive;
+	font-family: 'Manrope', sans-serif;
 	color: #113768;
 }
 /* Τυπογραφία της ενότητας επικοινωνίας. */
 .mail{
 	text-align: center;
-	font-family: 'Calistoga', cursive;
+	 font-family: 'Manrope', sans-serif;
 	color: #fff;
 }
 
